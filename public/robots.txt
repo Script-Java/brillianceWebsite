@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://www.brillianceskin.us/
+
+# Sitemaps
+Sitemap: https://www.brillianceskin.us/sitemap.xml
