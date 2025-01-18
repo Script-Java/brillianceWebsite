@@ -40,7 +40,7 @@ function ContactComp() {
 
   return (
     <div>
-      <div className="mt-96"> {/* Adjusted margin to better suit layout */}
+      <div className="mt-60"> {/* Adjusted margin to better suit layout */}
         <div className="grid grid-cols-1 gap-4 md:grid-cols-2 md:gap-8">
           <div className="max-w-3xl">
             <h1 className="text-3xl lg:text-6xl text-center lg:text-start font-bold text-primary">
