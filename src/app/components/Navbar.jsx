@@ -5,6 +5,7 @@ import { IoMenu } from "react-icons/io5";
 import Link from "next/link";
 import Image from "next/image";
 import { FaInstagram, FaFacebookF, FaGoogle } from "react-icons/fa";
+import { FaLocationDot } from "react-icons/fa6";
 
 function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -91,6 +92,9 @@ function Navbar() {
                   <FaGoogle></FaGoogle>
                 </Link>
               </div>
+                <p className="flex flex-row gap-2 justify-center text-center text-white mt-8 text-base lg:text-xl items-center">
+                  <FaLocationDot /> City Salon Suites & Spa - Plano, 5813 Preston Rd 554 Unit 202, Plano, TX 75093
+                </p>
             </div>
           </div>
         )}

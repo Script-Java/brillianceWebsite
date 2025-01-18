@@ -9,7 +9,7 @@ export default function About() {
     <div className="">
       <Navbar></Navbar>
 
-      <div className="container py-96 m-auto p-4">
+      <div className="container py-52 m-auto p-4">
         <h1 className="text-3xl lg:text-6xl text-primary font-bold my-10 text-center">
           The Passion Behind the Brilliance
         </h1>

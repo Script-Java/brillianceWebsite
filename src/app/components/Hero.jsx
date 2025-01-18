@@ -5,7 +5,7 @@ import Link from "next/link";
 
 function Hero() {
   return (
-    <section className="container py-96 p-12 m-auto">
+    <section className="container py-44 p-12 m-auto">
       <div className="flex flex-col lg:flex-row items-center justify-center gap-4">
         <div className="">
           <Image className="rounded-2xl " width={800} src={heroImg} alt="spa hero Image" />

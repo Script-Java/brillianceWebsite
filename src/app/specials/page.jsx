@@ -14,12 +14,12 @@ export default function Specials() {
     <div className="">
       <div className="">
         <Navbar />
-        <div className="py-96 container m-auto ">
+        <div className="py-52 container m-auto ">
           <div className="">
             <h1 className="text-3xl lg:text-6xl text-primary my-10 font-bold text-center">
               Specials Deals!
             </h1>
-            <div className="flex justify-center">
+            <div className="flex gap-4 justify-center">
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-8">
                 <div className="card bg-gray-950 text-white w-96 shadow-xl">
                   <figure>

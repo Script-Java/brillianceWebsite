@@ -4,7 +4,7 @@ import Image from "next/image";
 
 function About() {
   return (
-    <section className="my-80">
+    <section className="my-40">
   <div className="container m-auto my-40 lg:my-80 p-8 lg:p-12 bg-gray-950 text-white rounded-2xl shadow-xl relative">
     {/* Text Section */}
     <div className="relative lg:flex lg:items-center lg:h-[30rem] lg:justify-end">
