@@ -6,7 +6,7 @@ import img2 from "../assets/s2.jpg";
 import img3 from "../assets/s3.jpg";
 import img4 from "../assets/s4.jpg";
 import img5 from "../assets/s5.jpg";
-import img6 from "../assets/s6.jpg";
+import img6 from "../assets/7.jpg";
 import Link from "next/link";
 
 export default function Specials() {
@@ -70,7 +70,7 @@ export default function Specials() {
 
                 <div className="card bg-gray-950 text-white w-96 shadow-xl">
                   <figure>
-                    <Image src={img3} alt="special3"></Image>
+                    <Image src={img4} alt="special3"></Image>
                   </figure>
                   <div className="card-body">
                     <h2 className="card-title">
@@ -93,7 +93,7 @@ export default function Specials() {
 
                 <div className="card bg-gray-950 text-white w-96 shadow-xl">
                   <figure>
-                    <Image src={img4} alt="special4"></Image>
+                    <Image src={img3} alt="special4"></Image>
                   </figure>
                   <div className="card-body">
                     <h2 className="card-title">IPL Photo Facial Face</h2>
@@ -114,7 +114,7 @@ export default function Specials() {
 
                 <div className="card bg-gray-950 text-white w-96 shadow-xl">
                   <figure>
-                    <Image src={img5} alt="special1"></Image>
+                    <Image src={img6} alt="special1"></Image>
                   </figure>
                   <div className="card-body">
                     <h2 className="card-title">Skinpen Microneedling Face</h2>
