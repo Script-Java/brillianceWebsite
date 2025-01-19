@@ -18,7 +18,7 @@ function Services() {
                             <h3 className="text-3xl font-bold">Laser Hair Removal</h3>
                             <p>Achieve smooth, hair-free skin with laser hair removal. This safe and effective treatment targets hair follicles to reduce unwanted hair growth, leaving your skin silky and flawless. Perfect for long-lasting results and a hassle-free routine.</p>
                             <div className="flex justify-center items-center gap-4">
-                                <Link className="btn btn-primary" href={'/contact'} passHref>Book Appointment</Link>
+                                <Link className="btn btn-primary" href={'https://gklrs.myaestheticrecord.com/online-booking/h/Ml8yNTEyMF9jbGluaWNz'} passHref>Book Appointment</Link>
                                 <Link className="btn btn-secondary" href={'/specials'} passHref>Learn More</Link>
                             </div>
                         </div>
@@ -29,7 +29,7 @@ function Services() {
                             <h3 className="text-3xl font-bold">IPL Photo Facial</h3>
                             <p>Achieve smooth, hair-free skin with laser hair removal. This safe and effective treatment targets hair follicles to reduce unwanted hair growth, leaving your skin silky and flawless. Perfect for long-lasting results and a hassle-free routine.</p>
                             <div className="flex justify-center items-center gap-4">
-                                <Link className="btn btn-primary" href={'/contact'} passHref>Book Appointment</Link>
+                                <Link className="btn btn-primary" href={'https://gklrs.myaestheticrecord.com/online-booking/h/Ml8yNTEyMF9jbGluaWNz'} passHref>Book Appointment</Link>
                                 <Link className="btn btn-secondary" href={'/specials'} passHref>Learn More</Link>
                             </div>
                         </div>
@@ -40,7 +40,7 @@ function Services() {
                             <h3 className="text-3xl font-bold">Skinpen Microneedling</h3>
                             <p>Achieve smooth, hair-free skin with laser hair removal. This safe and effective treatment targets hair follicles to reduce unwanted hair growth, leaving your skin silky and flawless. Perfect for long-lasting results and a hassle-free routine.</p>
                             <div className="flex justify-center items-center gap-4">
-                                <Link className="btn btn-primary" href={'/contact'} passHref>Book Appointment</Link>
+                                <Link className="btn btn-primary" href={'https://gklrs.myaestheticrecord.com/online-booking/h/Ml8yNTEyMF9jbGluaWNz'} passHref>Book Appointment</Link>
                                 <Link className="btn btn-secondary" href={'/specials'} passHref>Learn More</Link>
                             </div>
                         </div>

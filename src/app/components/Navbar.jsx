@@ -34,9 +34,13 @@ function Navbar() {
               <li className="btn btn-ghost">
                 <Link href={"/specials"}>Specials</Link>
               </li>
-              <li className="btn btn-secondary">
+              <li className="btn btn-ghost">
                 <Link href={"/contact"}>Contact Us</Link>
               </li>
+              <li className="btn btn-primary">
+                  <Link href={"https://gklrs.myaestheticrecord.com/online-booking/h/Ml8yNTEyMF9jbGluaWNz"}>Schedule Appointment</Link>
+              </li>
+
             </ul>
           </div>
           <div className="flex-none">
@@ -61,8 +65,11 @@ function Navbar() {
                 <li className="btn btn-ghost">
                   <Link href={"/specials"}>Specials</Link>
                 </li>
-                <li className="btn btn-secondary">
+                <li className="btn btn-ghost">
                   <Link href={"/contact"}>Contact</Link>
+                </li>
+                <li className="btn btn-primary">
+                  <Link href={"https://gklrs.myaestheticrecord.com/online-booking/h/Ml8yNTEyMF9jbGluaWNz"}>Schedule Appointment</Link>
                 </li>
               </ul>
               <div className="flex gap-4 justify-center mt-8 text-white text-xl">
@@ -92,7 +99,7 @@ function Navbar() {
                   <FaGoogle></FaGoogle>
                 </Link>
               </div>
-                <p className="flex flex-row gap-2 justify-center text-center text-white mt-8 text-base lg:text-xl items-center">
+                <p className="flex flex-row gap-2 justify-center text-center text-white mt-8 text-sm lg:text-xl items-center">
                   <FaLocationDot /> City Salon Suites & Spa - Plano, 5813 Preston Rd 554 Unit 202, Plano, TX 75093
                 </p>
             </div>

@@ -19,7 +19,7 @@ function Hero() {
             confidence.
           </p>
           <div className="flex gap-4 justify-center lg:justify-start">
-            <Link className="btn btn-primary px-12" href={"/contact"} passHref>Get Started</Link>
+            <Link className="btn btn-primary px-12" href={"https://gklrs.myaestheticrecord.com/online-booking/h/Ml8yNTEyMF9jbGluaWNz"} passHref>Get Started</Link>
             <Link className="btn btn-secondary px-12" href={"/specials"} passHref>Learn More</Link>
           </div>
         </div>
