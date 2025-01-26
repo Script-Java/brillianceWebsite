@@ -5,6 +5,7 @@ import img1 from '../assets/1.jpg'
 import img2 from '../assets/2.jpg'
 import img3 from '../assets/3.jpg'
 
+
 function Services() {
   return (
     <section className="container m-auto p-12 my-40">

@@ -8,6 +8,9 @@ import img4 from "../assets/s4.jpg";
 import img5 from "../assets/s5.jpg";
 import img6 from "../assets/7.jpg";
 import Link from "next/link";
+import img8 from "../assets/8.jpg";
+import img9 from "../assets/9.jpg";
+import img10 from "../assets/10.jpg";
 
 export default function Specials() {
   return (
@@ -19,6 +22,64 @@ export default function Specials() {
             <h1 className="text-3xl lg:text-6xl text-primary my-10 font-bold text-center">
               Specials Deals!
             </h1>
+
+            <div className="flex justify-center items-center min-h-96">
+              <div className="w-full max-w-4xl bg-gray-950 rounded-xl shadow-xl p-10 my-20">
+                <div className="text-center  mb-4">
+                  <h2 className="text-3xl font-bold text-secondary">
+                    💖 Valentine's Day Special 💖
+                  </h2>
+                  <p className="text-secondary">Treat yourself or a loved one this Valentine’s Day with our exclusive beauty deals. Enjoy glowing skin, smooth results, and radiant confidence at unbeatable prices. Don’t miss out—book now!</p>
+                </div>
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                  <div className="p-4 shadow-sm border rounded-lg flex flex-col items-center bg-white">
+                    <Image src={img8} alt="Microneedling"></Image>
+                    <h3 className="text-lg font-semibold">
+                      Skinpen Microneedling
+                    </h3>
+                    <p className="text-red-500 text-base font-bold">$199</p>
+                    <Link
+                      className="btn btn-secondary mt-2 text-sm px-6 py-1"
+                      href={
+                        "https://gklrs.myaestheticrecord.com/online-booking/h/Ml8yNTEyMF9jbGluaWNz"
+                      }
+                      passHref
+                    >
+                     Schedule Appointment
+                    </Link>
+                  </div>
+                  <div className="p-4 shadow-sm border rounded-lg flex flex-col items-center bg-white">
+                    <Image src={img9} alt="LHR Full Body"></Image>
+                    <h3 className="text-lg font-semibold">LHR Full Body</h3>
+                    <p className="text-red-500 text-base font-bold">$300</p>
+                    <Link
+                      className="btn btn-secondary mt-2 text-sm px-6 py-1"
+                      href={
+                        "https://gklrs.myaestheticrecord.com/online-booking/h/Ml8yNTEyMF9jbGluaWNz"
+                      }
+                      passHref
+                    >
+                      Schedule Appointment
+                    </Link>
+                  </div>
+                  <div className="p-4 shadow-sm border rounded-lg flex flex-col items-center bg-white">
+                    <Image src={img10} alt="IPL Photo Facial"></Image>
+                    <h3 className="text-lg font-semibold">IPL Photo Facial</h3>
+                    <p className="text-red-500 text-base font-bold">$75</p>
+                    <Link
+                      className="btn btn-secondary mt-2 text-sm px-6 py-1"
+                      href={
+                        "https://gklrs.myaestheticrecord.com/online-booking/h/Ml8yNTEyMF9jbGluaWNz"
+                      }
+                      passHref
+                    >
+                      Schedule Appointment
+                    </Link>
+                  </div>
+                </div>
+              </div>
+            </div>
+
             <div className="flex gap-4 justify-center">
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-8">
                 <div className="card bg-gray-950 text-white w-96 shadow-xl">
@@ -39,8 +100,16 @@ export default function Specials() {
                       <span className="text-xl line-through">$ 1900.00</span>
                       <span className="text-xl text-primary">$ 1599.00</span>
                     </div>
-                    <div className="card-actions mt-4 justify-end">
-                      <Link className="btn btn-secondary" href={'/contact'} passHref>Schedule Appointment</Link>
+                    <div className="card-actions mt-4 justify-start">
+                      <Link
+                        className="btn btn-secondary px-12"
+                        href={
+                          "https://gklrs.myaestheticrecord.com/online-booking/h/Ml8yNTEyMF9jbGluaWNz"
+                        }
+                        passHref
+                      >
+                        Schedule Appointment
+                      </Link>
                     </div>
                   </div>
                 </div>
@@ -62,8 +131,16 @@ export default function Specials() {
                       <span className="text-xl line-through">$ 1200.00</span>
                       <span className="text-xl text-primary">$ 999.00</span>
                     </div>
-                    <div className="card-actions justify-end">
-                        <Link className="btn btn-secondary" href={'/contact'} passHref>Schedule Appointment</Link>
+                    <div className="card-actions justify-start">
+                      <Link
+                        className="btn btn-secondary px-12"
+                        href={
+                          "https://gklrs.myaestheticrecord.com/online-booking/h/Ml8yNTEyMF9jbGluaWNz"
+                        }
+                        passHref
+                      >
+                        Schedule Appointment
+                      </Link>
                     </div>
                   </div>
                 </div>
@@ -85,8 +162,16 @@ export default function Specials() {
                       <span className="text-xl line-through">$ 799.00</span>
                       <span className="text-xl text-primary">$ 599.00</span>
                     </div>
-                    <div className="card-actions justify-end">
-                        <Link className="btn btn-secondary" href={'/contact'} passHref>Schedule Appointment</Link>
+                    <div className="card-actions justify-start">
+                      <Link
+                        className="btn btn-secondary px-12"
+                        href={
+                          "https://gklrs.myaestheticrecord.com/online-booking/h/Ml8yNTEyMF9jbGluaWNz"
+                        }
+                        passHref
+                      >
+                        Schedule Appointment
+                      </Link>
                     </div>
                   </div>
                 </div>
@@ -106,8 +191,16 @@ export default function Specials() {
                       <span className="text-xl line-through">$ 129.00</span>
                       <span className="text-xl text-primary">$ 99.00</span>
                     </div>
-                    <div className="card-actions justify-end">
-                        <Link className="btn btn-secondary" href={'/contact'} passHref>Schedule Appointment</Link>
+                    <div className="card-actions justify-start">
+                      <Link
+                        className="btn btn-secondary px-12"
+                        href={
+                          "https://gklrs.myaestheticrecord.com/online-booking/h/Ml8yNTEyMF9jbGluaWNz"
+                        }
+                        passHref
+                      >
+                        Schedule Appointment
+                      </Link>
                     </div>
                   </div>
                 </div>
@@ -128,8 +221,16 @@ export default function Specials() {
                       <span className="text-xl line-through">$ 299.00</span>
                       <span className="text-xl text-primary">$ 250.00</span>
                     </div>
-                    <div className="card-actions justify-end">
-                        <Link className="btn btn-secondary" href={'/contact'} passHref>Schedule Appointment</Link>
+                    <div className="card-actions justify-start">
+                      <Link
+                        className="btn btn-secondary px-12"
+                        href={
+                          "https://gklrs.myaestheticrecord.com/online-booking/h/Ml8yNTEyMF9jbGluaWNz"
+                        }
+                        passHref
+                      >
+                        Schedule Appointment
+                      </Link>
                     </div>
                   </div>
                 </div>
