@@ -23,63 +23,6 @@ export default function Specials() {
               Specials Deals!
             </h1>
 
-            <div className="flex justify-center items-center min-h-96">
-              <div className="w-full max-w-4xl bg-gray-950 rounded-xl shadow-xl p-10 my-20">
-                <div className="text-center  mb-4">
-                  <h2 className="text-3xl font-bold text-secondary">
-                    💖 Valentine's Day Special 💖
-                  </h2>
-                  <p className="text-secondary">Treat yourself or a loved one this Valentine’s Day with our exclusive beauty deals. Enjoy glowing skin, smooth results, and radiant confidence at unbeatable prices. Don’t miss out—book now!</p>
-                </div>
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-                  <div className="p-4 shadow-sm border rounded-lg flex flex-col items-center bg-white">
-                    <Image src={img8} alt="Microneedling"></Image>
-                    <h3 className="text-lg font-semibold">
-                      Skinpen Microneedling
-                    </h3>
-                    <p className="text-red-500 text-base font-bold">$199</p>
-                    <Link
-                      className="btn btn-secondary mt-2 text-sm px-6 py-1"
-                      href={
-                        "https://gklrs.myaestheticrecord.com/online-booking/h/Ml8yNTEyMF9jbGluaWNz"
-                      }
-                      passHref
-                    >
-                     Schedule Appointment
-                    </Link>
-                  </div>
-                  <div className="p-4 shadow-sm border rounded-lg flex flex-col items-center bg-white">
-                    <Image src={img9} alt="LHR Full Body"></Image>
-                    <h3 className="text-lg font-semibold">LHR Full Body</h3>
-                    <p className="text-red-500 text-base font-bold">$300</p>
-                    <Link
-                      className="btn btn-secondary mt-2 text-sm px-6 py-1"
-                      href={
-                        "https://gklrs.myaestheticrecord.com/online-booking/h/Ml8yNTEyMF9jbGluaWNz"
-                      }
-                      passHref
-                    >
-                      Schedule Appointment
-                    </Link>
-                  </div>
-                  <div className="p-4 shadow-sm border rounded-lg flex flex-col items-center bg-white">
-                    <Image src={img10} alt="IPL Photo Facial"></Image>
-                    <h3 className="text-lg font-semibold">IPL Photo Facial</h3>
-                    <p className="text-red-500 text-base font-bold">$75</p>
-                    <Link
-                      className="btn btn-secondary mt-2 text-sm px-6 py-1"
-                      href={
-                        "https://gklrs.myaestheticrecord.com/online-booking/h/Ml8yNTEyMF9jbGluaWNz"
-                      }
-                      passHref
-                    >
-                      Schedule Appointment
-                    </Link>
-                  </div>
-                </div>
-              </div>
-            </div>
-
             <div className="flex gap-4 justify-center">
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-8">
                 <div className="card bg-gray-950 text-white w-96 shadow-xl">
