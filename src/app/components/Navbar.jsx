@@ -38,7 +38,7 @@ function Navbar() {
                 <Link href={"/contact"}>Contact Us</Link>
               </li>
               <li className="btn btn-primary">
-                  <Link href={"https://gklrs.myaestheticrecord.com/online-booking/h/Ml8yNTEyMF9jbGluaWNz"}>Schedule Appointment</Link>
+                  <Link href={"https://www.vagaro.com/brilliantskinandlazer"}>Schedule Appointment</Link>
               </li>
 
             </ul>

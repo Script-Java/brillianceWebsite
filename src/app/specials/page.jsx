@@ -47,7 +47,7 @@ export default function Specials() {
                       <Link
                         className="btn btn-secondary px-12"
                         href={
-                          "https://gklrs.myaestheticrecord.com/online-booking/h/Ml8yNTEyMF9jbGluaWNz"
+                          "https://www.vagaro.com/brilliantskinandlazer"
                         }
                         passHref
                       >
@@ -78,7 +78,7 @@ export default function Specials() {
                       <Link
                         className="btn btn-secondary px-12"
                         href={
-                          "https://gklrs.myaestheticrecord.com/online-booking/h/Ml8yNTEyMF9jbGluaWNz"
+                          "https://www.vagaro.com/brilliantskinandlazer"
                         }
                         passHref
                       >
@@ -109,7 +109,7 @@ export default function Specials() {
                       <Link
                         className="btn btn-secondary px-12"
                         href={
-                          "https://gklrs.myaestheticrecord.com/online-booking/h/Ml8yNTEyMF9jbGluaWNz"
+                          "https://www.vagaro.com/brilliantskinandlazer"
                         }
                         passHref
                       >
@@ -138,7 +138,7 @@ export default function Specials() {
                       <Link
                         className="btn btn-secondary px-12"
                         href={
-                          "https://gklrs.myaestheticrecord.com/online-booking/h/Ml8yNTEyMF9jbGluaWNz"
+                          "https://www.vagaro.com/brilliantskinandlazer"
                         }
                         passHref
                       >
@@ -168,7 +168,7 @@ export default function Specials() {
                       <Link
                         className="btn btn-secondary px-12"
                         href={
-                          "https://gklrs.myaestheticrecord.com/online-booking/h/Ml8yNTEyMF9jbGluaWNz"
+                          "https://www.vagaro.com/brilliantskinandlazer"
                         }
                         passHref
                       >
