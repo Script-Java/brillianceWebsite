@@ -19,6 +19,14 @@ import { getServerSideURL } from './utilities/getURL'
 const filename = fileURLToPath(import.meta.url)
 const dirname = path.dirname(filename)
 
+console.log('[Payload Config Init] DATABASE_URL present:', !!process.env.DATABASE_URL)
+console.log('[Payload Config Init] DATABASE_AUTH_TOKEN present:', !!process.env.DATABASE_AUTH_TOKEN)
+console.log('[Payload Config Init] PAYLOAD_SECRET present:', !!process.env.PAYLOAD_SECRET)
+console.log('[Payload Config Init] NEXT_PUBLIC_SERVER_URL:', process.env.NEXT_PUBLIC_SERVER_URL)
+console.log('[Payload Config Init] VERCEL_PROJECT_PRODUCTION_URL:', process.env.VERCEL_PROJECT_PRODUCTION_URL)
+console.log('[Payload Config Init] VERCEL_URL:', process.env.VERCEL_URL)
+console.log('[Payload Config Init] getServerSideURL():', getServerSideURL())
+
 export default buildConfig({
   admin: {
     components: {

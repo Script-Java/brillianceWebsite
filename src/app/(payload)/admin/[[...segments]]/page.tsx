@@ -18,7 +18,25 @@ type Args = {
 export const generateMetadata = ({ params, searchParams }: Args): Promise<Metadata> =>
   generatePageMetadata({ config, params, searchParams })
 
-const Page = ({ params, searchParams }: Args) =>
-  RootPage({ config, params, searchParams, importMap })
+const Page = async ({ params, searchParams }: Args) => {
+  const resolvedParams = await params
+  const resolvedSearchParams = await searchParams
+  console.log('[Payload Admin Page] Rendering Page with:', {
+    resolvedParams,
+    resolvedSearchParams,
+    NEXT_PUBLIC_SERVER_URL: process.env.NEXT_PUBLIC_SERVER_URL,
+    VERCEL_PROJECT_PRODUCTION_URL: process.env.VERCEL_PROJECT_PRODUCTION_URL,
+    VERCEL_URL: process.env.VERCEL_URL,
+    NODE_ENV: process.env.NODE_ENV,
+  })
+  try {
+    const result = await RootPage({ config, params, searchParams, importMap })
+    console.log('[Payload Admin Page] RootPage rendered successfully')
+    return result
+  } catch (err) {
+    console.error('[Payload Admin Page] Error rendering RootPage:', err)
+    throw err
+  }
+}
 
 export default Page
