@@ -5,10 +5,9 @@ import configPromise from '@payload-config'
 import { getPayload, type RequiredDataFromCollectionSlug } from 'payload'
 import { draftMode } from 'next/headers'
 import React, { cache } from 'react'
-import { homeStatic } from '@/endpoints/seed/home-static'
 
-import { RenderBlocks } from '@/blocks/RenderBlocks'
-import { RenderHero } from '@/heros/RenderHero'
+
+
 import { generateMeta } from '@/utilities/generateMeta'
 import PageClient from './page.client'
 import { LivePreviewListener } from '@/components/LivePreviewListener'
@@ -55,16 +54,11 @@ export default async function Page({ params: paramsPromise }: Args) {
     slug: decodedSlug,
   })
 
-  // Remove this code once your website is seeded
-  if (!page && slug === 'home') {
-    page = homeStatic
-  }
+
 
   if (!page) {
     return <PayloadRedirects url={url} />
   }
-
-  const { hero, layout } = page
 
   return (
     <article className="pt-16 pb-24">
@@ -74,8 +68,10 @@ export default async function Page({ params: paramsPromise }: Args) {
 
       {draft && <LivePreviewListener />}
 
-      <RenderHero {...hero} />
-      <RenderBlocks blocks={layout} />
+      {/* Render generic page title or default content if needed */}
+      <div className="container m-auto p-4">
+        <h1 className="text-4xl font-bold text-center mt-10">{page.title}</h1>
+      </div>
     </article>
   )
 }

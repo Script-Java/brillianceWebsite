@@ -2,12 +2,7 @@ import type { CollectionConfig } from 'payload'
 
 import { authenticated } from '../../access/authenticated'
 import { authenticatedOrPublished } from '../../access/authenticatedOrPublished'
-import { Archive } from '../../blocks/ArchiveBlock/config'
-import { CallToAction } from '../../blocks/CallToAction/config'
-import { Content } from '../../blocks/Content/config'
-import { FormBlock } from '../../blocks/Form/config'
-import { MediaBlock } from '../../blocks/MediaBlock/config'
-import { hero } from '@/heros/config'
+
 import { slugField } from 'payload'
 import { populatePublishedAt } from '../../hooks/populatePublishedAt'
 import { generatePreviewPath } from '../../utilities/generatePreviewPath'
@@ -64,22 +59,132 @@ export const Pages: CollectionConfig<'pages'> = {
       type: 'tabs',
       tabs: [
         {
-          fields: [hero],
-          label: 'Hero',
-        },
-        {
+          label: 'Brilliance Content',
           fields: [
             {
-              name: 'layout',
-              type: 'blocks',
-              blocks: [CallToAction, Content, MediaBlock, Archive, FormBlock],
-              required: true,
+              name: 'brillianceHome',
+              type: 'group',
+              label: 'Brilliance Home Content',
               admin: {
-                initCollapsed: true,
+                condition: (data) => data?.slug === 'home',
               },
+              fields: [
+                {
+                  name: 'hero',
+                  type: 'group',
+                  fields: [
+                    { name: 'title', type: 'text' },
+                    { name: 'description', type: 'textarea' },
+                    { name: 'image', type: 'upload', relationTo: 'media' },
+                    { name: 'ctaText', type: 'text' },
+                    { name: 'ctaLink', type: 'text' },
+                    { name: 'secondaryText', type: 'text' },
+                    { name: 'secondaryLink', type: 'text' },
+                  ],
+                },
+                {
+                  name: 'about',
+                  type: 'group',
+                  fields: [
+                    { name: 'title', type: 'text' },
+                    { name: 'description', type: 'textarea' },
+                    { name: 'image', type: 'upload', relationTo: 'media' },
+                  ],
+                },
+                {
+                  name: 'services',
+                  type: 'array',
+                  fields: [
+                    { name: 'title', type: 'text' },
+                    { name: 'description', type: 'textarea' },
+                    { name: 'image', type: 'upload', relationTo: 'media' },
+                    { name: 'ctaText', type: 'text' },
+                    { name: 'ctaLink', type: 'text' },
+                    { name: 'secondaryText', type: 'text' },
+                    { name: 'secondaryLink', type: 'text' },
+                  ],
+                },
+                {
+                  name: 'testimonials',
+                  type: 'array',
+                  fields: [
+                    { name: 'quote', type: 'textarea' },
+                    { name: 'author', type: 'text' },
+                    { name: 'stars', type: 'number', min: 1, max: 5 },
+                  ],
+                },
+              ],
+            },
+            {
+              name: 'brillianceAbout',
+              type: 'group',
+              label: 'Brilliance About Content',
+              admin: {
+                condition: (data) => data?.slug === 'about',
+              },
+              fields: [
+                {
+                  name: 'ceo',
+                  type: 'group',
+                  fields: [
+                    { name: 'title', type: 'text' },
+                    { name: 'name', type: 'text' },
+                    { name: 'description', type: 'textarea' },
+                    { name: 'image', type: 'upload', relationTo: 'media' },
+                  ],
+                },
+                {
+                  name: 'clinic',
+                  type: 'group',
+                  fields: [
+                    { name: 'title', type: 'text' },
+                    { name: 'image', type: 'upload', relationTo: 'media' },
+                    { name: 'description1', type: 'textarea' },
+                    { name: 'description2', type: 'textarea' },
+                    { name: 'description3', type: 'textarea' },
+                  ],
+                },
+              ],
+            },
+            {
+              name: 'brillianceSpecials',
+              type: 'group',
+              label: 'Brilliance Specials Content',
+              admin: {
+                condition: (data) => data?.slug === 'specials',
+              },
+              fields: [
+                { name: 'title', type: 'text' },
+                {
+                  name: 'deals',
+                  type: 'array',
+                  fields: [
+                    { name: 'title', type: 'text' },
+                    { name: 'description', type: 'textarea' },
+                    { name: 'originalPrice', type: 'text' },
+                    { name: 'promoPrice', type: 'text' },
+                    { name: 'image', type: 'upload', relationTo: 'media' },
+                    { name: 'alt', type: 'text' },
+                  ],
+                },
+              ],
+            },
+            {
+              name: 'brillianceContact',
+              type: 'group',
+              label: 'Brilliance Contact Content',
+              admin: {
+                condition: (data) => data?.slug === 'contact',
+              },
+              fields: [
+                { name: 'title', type: 'text' },
+                { name: 'description', type: 'textarea' },
+                { name: 'email', type: 'text' },
+                { name: 'phone', type: 'text' },
+                { name: 'address', type: 'textarea' },
+              ],
             },
           ],
-          label: 'Content',
         },
         {
           name: 'meta',
