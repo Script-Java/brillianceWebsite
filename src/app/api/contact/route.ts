@@ -28,24 +28,46 @@ export async function POST(request: Request) {
       },
     });
 
-    // Create transporter
-    const transporter = nodemailer.createTransport({
-      service: "gmail",
-      auth: {
-        user: process.env.EMAIL,
-        pass: process.env.EMAIL_PASS,
-      },
-    });
+    // Check for email credentials
+    if (!process.env.EMAIL || !process.env.EMAIL_PASS) {
+      console.error("[Nodemailer] EMAIL or EMAIL_PASS environment variables are missing.");
+      throw new Error("Email configuration credentials are missing on the server.");
+    }
+
+    // Create transporter (support custom SMTP host or fallback to Gmail)
+    const smtpHost = process.env.SMTP_HOST;
+    const smtpPort = parseInt(process.env.SMTP_PORT || "587", 10);
+    const smtpSecure = process.env.SMTP_SECURE === "true";
+
+    const transporter = smtpHost
+      ? nodemailer.createTransport({
+          host: smtpHost,
+          port: smtpPort,
+          secure: smtpSecure,
+          auth: {
+            user: process.env.EMAIL,
+            pass: process.env.EMAIL_PASS,
+          },
+        })
+      : nodemailer.createTransport({
+          service: "gmail",
+          auth: {
+            user: process.env.EMAIL,
+            pass: process.env.EMAIL_PASS,
+          },
+        });
 
     const mailOptions = {
       from: process.env.EMAIL,
-      to: process.env.EMAIL,
+      to: process.env.CONTACT_RECEIVER_EMAIL || process.env.EMAIL,
       subject: `New Contact Form Submission from ${name}`,
       text: `Name: ${name}\nEmail: ${email}\nPhone: ${phone || "Not provided"}\nMessage: ${message}`,
     };
 
     // Send the email
+    console.log(`[Nodemailer] Sending email from ${process.env.EMAIL} using ${smtpHost ? `SMTP host ${smtpHost}` : "Gmail service"}...`);
     await transporter.sendMail(mailOptions);
+    console.log("[Nodemailer] Email sent successfully!");
 
     return NextResponse.json(
       { message: "Message sent successfully!" },
