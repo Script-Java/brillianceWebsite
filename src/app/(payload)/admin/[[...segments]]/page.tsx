@@ -33,7 +33,10 @@ const Page = async ({ params, searchParams }: Args) => {
     const result = await RootPage({ config, params, searchParams, importMap })
     console.log('[Payload Admin Page] RootPage rendered successfully')
     return result
-  } catch (err) {
+  } catch (err: any) {
+    if (err && typeof err === 'object' && (err.message === 'NEXT_REDIRECT' || (err.digest && err.digest.startsWith('NEXT_REDIRECT')))) {
+      throw err
+    }
     console.error('[Payload Admin Page] Error rendering RootPage:', err)
     throw err
   }
