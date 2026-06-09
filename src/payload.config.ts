@@ -58,6 +58,7 @@ export default buildConfig({
   },
   // This config helps us configure global or default features that the other editors can inherit
   editor: defaultLexical,
+  serverURL: process.env.NEXT_PUBLIC_SERVER_URL || 'https://www.brillianceskin.us',
   db: sqliteAdapter({
     client: {
       url: process.env.DATABASE_URL || '',
