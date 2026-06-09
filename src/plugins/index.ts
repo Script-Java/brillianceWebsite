@@ -90,14 +90,11 @@ export const plugins: Plugin[] = [
       },
     },
   }),
-  ...(process.env.BLOB_READ_WRITE_TOKEN || process.env.BLOB_STORE_ID
-    ? [
-        vercelBlobStorage({
-          collections: {
-            media: true,
-          },
-          token: process.env.BLOB_READ_WRITE_TOKEN || '',
-        }),
-      ]
-    : []),
+  vercelBlobStorage({
+    enabled: !!(process.env.BLOB_READ_WRITE_TOKEN || process.env.BLOB_STORE_ID),
+    collections: {
+      media: true,
+    },
+    token: process.env.BLOB_READ_WRITE_TOKEN || '',
+  }),
 ]
